@@ -57,7 +57,7 @@ const HomePage = () => {
                 <Link
                   to={{
                     pathname: `movies/${makeSlug(
-                      `${movie.title} ${movie.id}`
+                      `${movie.title} ${movie.id}`,
                     )}`,
                     state: { from: location },
                   }}>
@@ -76,6 +76,7 @@ const HomePage = () => {
                 ) : (
                   <span className={styles.movieTitle}>{movie.name}</span>
                 )}
+                <p className={styles.vote}>{movie.vote_average}</p>
               </li>
             ))}
           </ul>

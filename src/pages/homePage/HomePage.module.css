@@ -51,3 +51,13 @@
   display: flex;
   justify-content: center;
 }
+
+.vote {
+  text-align: center;
+  font-weight: 800;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  width: 40px;
+  margin: 5px auto;
+}
