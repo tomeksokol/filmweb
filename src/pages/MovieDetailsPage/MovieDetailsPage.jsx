@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import MovieDetails from '../../components/MovieDetails/MovieDetails';
-import { getMovieDetails } from '../../utils/apiCalls';
-import ErrorView from '../../components/ErrorComponent/ErrorView.';
-
-
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import MovieDetails from "../../components/MovieDetails/MovieDetails";
+import { getMovieDetails } from "../../utils/apiCalls";
+import ErrorView from "../../components/ErrorComponent/ErrorView.";
 
 const MovieDetailsPage = () => {
   const [movie, setMovie] = useState({});
@@ -14,24 +11,21 @@ const MovieDetailsPage = () => {
 
   useEffect(() => {
     getMovieDetails(id, setMovie)
-    .then(setMovie)
-    .catch(error => {
-      console.log(error);
-      setError(error.message);
-      });;
+      .then(setMovie)
+      .catch((error) => {
+        console.log(error);
+        setError(error.message);
+      });
   }, [id]);
-
-
 
   return (
     <div>
       <MovieDetails movie={movie} />
     </div>
-  )
-}
+  );
+};
 
-export default MovieDetailsPage
-
+export default MovieDetailsPage;
 
 // import React from 'react';
 // import { useState, useEffect, lazy, Suspense } from 'react';
@@ -42,9 +36,6 @@ export default MovieDetailsPage
 // import ErrorView from '../../components/ErrorComponent/ErrorView.';
 // import moviePlaceholder from "../../images/moviePlaceholder.png";
 // import styles from './MovieDetailsPage.module.css';
-
-
-
 
 // const MovieDetailsPage = () => {
 
@@ -136,7 +127,6 @@ export default MovieDetailsPage
 //             </li>
 //           </ul>
 
-         
 //         </>
 //       )}
 //     </main>
