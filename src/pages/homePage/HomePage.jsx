@@ -11,7 +11,7 @@ import useStyles from "../../utils/paginationStyles";
 import styles from "./HomePage.module.css";
 import moviePlaceholder from "../../images/moviePlaceholder.png";
 
-const makeSlug = (string) => slugify(string, { lower: true });
+// const makeSlug = (string) => slugify(string, { lower: true });
 
 const HomePage = () => {
   const classes = useStyles();
@@ -54,20 +54,14 @@ const HomePage = () => {
           <ul className={styles.moviesList}>
             {movies.map((movie) => (
               <li key={movie.id} className={styles.moviesItem}>
-                <Link
-                  to={{
-                    pathname: `movies/${makeSlug(
-                      `${movie.title} ${movie.id}`,
-                    )}`,
-                    state: { from: location },
-                  }}>
+                <Link to={`/movies/${movie.id}`}>
                   <img
                     src={
                       movie.poster_path
                         ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
                         : moviePlaceholder
                     }
-                    alt={movie.title}
+                    alt={movie.title || movie.name}
                     className={styles.poster}
                   />
                 </Link>

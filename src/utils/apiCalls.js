@@ -23,7 +23,7 @@ function searchMovies(query, page) {
   );
 }
 
-function getMovieDetails(movieId) {
+function getMovieDetails(movieId, setMovie) {
   return apiService(
     `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=${LANGUAGE}`
   );
