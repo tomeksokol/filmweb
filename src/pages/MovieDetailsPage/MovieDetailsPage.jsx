@@ -2,14 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import MovieDetails from '../../components/MovieDetails/MovieDetails';
 import { getMovieDetails } from '../../utils/apiCalls';
+import ErrorView from '../../components/ErrorComponent/ErrorView.';
+
+
 
 
 const MovieDetailsPage = () => {
   const [movie, setMovie] = useState({});
   const { id } = useParams();
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getMovieDetails(id, setMovie);
+    getMovieDetails(id, setMovie)
+    .then(setMovie)
+    .catch(error => {
+      console.log(error);
+      setError(error.message);
+      });;
   }, [id]);
 
 

@@ -19,7 +19,7 @@ const MovieDetails = ({ movie }) => {
               src={`https://image.tmdb.org/t/p/w500/${poster_path}`} 
               alt={`${title} || ${name} plakat`} 
             />
-          ) : `${moviePlaceholder}` 
+          ) : (<img className={styles.posterPlaceholder} src={`${moviePlaceholder}`} alt="plakat"/>) 
           }
       
 
@@ -30,11 +30,7 @@ const MovieDetails = ({ movie }) => {
             <h2 className={styles.title}>Opis</h2>
             <p className={styles.info}>{overview}</p>
             <h2 className={styles.title}>Gatunek</h2>
-            <ul className={styles.genre}>
-                {genres.map(genre => (
-                <li key={genre.id}>{genre.name}</li>
-                ))}
-            </ul>
+            <p className={styles.genres}>{genres?.map(({ name }) => name + ", ")}</p>
           </div>
         </div>
 
