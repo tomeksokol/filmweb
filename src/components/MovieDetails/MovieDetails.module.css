@@ -33,7 +33,7 @@
   text-align: left;
 }
 
-.movieTitle {
+.movieTitle, .movieSubTitle {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
@@ -43,8 +43,13 @@
   text-align: center;
 }
 
+.movieSubTitle {
+  font-weight: 600;
+  font-size: 25px;
+}
+
 @media screen and (min-width: 768px) {
-  .movieTitle {
+  .movieTitle, .movieSubTitle {
     text-align: left;
   }
 }
@@ -77,16 +82,38 @@
 .nav {
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  padding: 20px 40px;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.additional {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
+  text-shadow: var(--textShadow);
+  text-align: center;
   border-top: 2px solid var(--accentColor);
+  border-bottom: 2px solid var(--accentColor);
+  background-color: #34495e;
+  box-shadow: var(--boxShadow);
 }
 
 .link {
-  margin-right: 24px;
-  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  font-weight: 800;
+  color: #fff;
   font-size: 18px;
-  color: var(--primaryTextColor);
+}
+
+.link:hover,
+.link:focus {
+  color: #fa7584;
 }
 
 .activeLink {
@@ -109,7 +136,7 @@
   cursor: pointer;
   border-radius: 4px;
 
-  color: #34495e;
+  color: #000;
   font-weight: 500;
   font-size: 20px;
 }

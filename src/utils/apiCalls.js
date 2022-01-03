@@ -29,7 +29,7 @@ function getMovieDetails(movieId, setMovie) {
   );
 }
 
-function getMovieCast(movieId) {
+function getMovieCast(movieId, setCast) {
   return apiService(
     `${BASE_URL}/movie/${movieId}/credits?api_key=${API_KEY}&language=${LANGUAGE}`
   );
