@@ -1,8 +1,9 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import LoaderComponent from "./components/LoaderComponent/LoaderComponent";
 import Nav from "./components/Nav/Nav";
+import { addBackToTop } from 'vanilla-back-to-top';
 
 const HomePage = lazy(() =>
   import("./pages/HomePage/HomePage" /* webpackChunkName: "home-view" */)
@@ -21,7 +22,15 @@ const MovieDetailsPage = lazy(() =>
 const Cast = lazy(() => import("./components/Cast/Cast"));
 const Reviews = lazy(() => import("./components/Reviews/Reviews"));
 
+
 function App() {
+
+  useEffect(() => {
+    addBackToTop({
+      backgroundColor: '#fa7584',
+    });
+  }, []);
+
   return (
     <div className="App">
       <Nav />

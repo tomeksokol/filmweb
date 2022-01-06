@@ -14,6 +14,7 @@ const MovieDetailsPage = () => {
   const [status, setStatus] = useState(STATUS.IDLE);
 
   useEffect(() => {
+    setStatus(STATUS.PENDING);
     getMovieDetails(id, setMovie)
       .then(setMovie)
       .then(setStatus(STATUS.RESOLVED))

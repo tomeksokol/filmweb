@@ -13,7 +13,7 @@ async function apiService(url = "", config = {}) {
 
 function getTrending(page) {
   return apiService(
-    `${BASE_URL}/trending/all/day?api_key=${API_KEY}&language=${LANGUAGE}&page=${page}`
+    `${BASE_URL}/trending/movie/day?api_key=${API_KEY}&language=${LANGUAGE}&page=${page}`
   );
 }
 
@@ -35,9 +35,9 @@ function getMovieCast(movieId, setCast) {
   );
 }
 
-function getMovieReviews(movieId, page) {
+function getMovieReviews(movieId, setReviews) {
   return apiService(
-    `${BASE_URL}/movie/${movieId}/reviews?api_key=${API_KEY}&language=${LANGUAGE}&page=${page}`
+    `${BASE_URL}/movie/${movieId}/reviews?api_key=${API_KEY}&language=en-US`
   );
 }
 

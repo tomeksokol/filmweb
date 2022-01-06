@@ -46,7 +46,7 @@ const MovieDetails = ({ movie, status }) => {
               <Link className={styles.link} to={`/movies/${id}/cast`}>Obsada</Link>
             </li>
             <li className={styles.listItem}>
-              <Link className={styles.link} to={`/movies/${id}/reviews`}>Recenzje</Link>
+              <Link className={styles.link} to={`/movies/${id}/reviews`}>Recenzje (ENG)</Link>
             </li>
           </ul>
           <Outlet/>

@@ -45,7 +45,7 @@ const HomePage = () => {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Popularne na dziś</h1>
+      <h1 className={styles.title}>Dziś na topie</h1>
 
       {status === STATUS.PENDING && <LoaderComponent />}
       {status === STATUS.REJECTED && <ErrorView message={error.message} />}

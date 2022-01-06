@@ -16,6 +16,7 @@ const Cast = () => {
   const [authors, setAuthors] = useState(null);
 
   useEffect(() => {
+    setStatus(STATUS.PENDING);
     getMovieCast(id)
     .then(({ cast }) => {
       setAuthors(cast);
@@ -30,7 +31,7 @@ const Cast = () => {
 
 
   return (
-    <div>
+    <>
 
       {status === STATUS.PENDING && <LoaderComponent />}
       {status === STATUS.REJECTED && <ErrorView message={error}/>}
@@ -62,7 +63,7 @@ const Cast = () => {
         }
         </ul>
       )}
-    </div>
+    </>
   )
 }
 
