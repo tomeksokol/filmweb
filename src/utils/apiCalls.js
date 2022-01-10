@@ -19,7 +19,7 @@ function getTrending(page) {
 
 function searchMovies(query, page) {
   return apiService(
-    `${BASE_URL}/search/multi?api_key=${API_KEY}&language=${LANGUAGE}&query=${query}&page=${page}`
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&language=${LANGUAGE}&query=${query}&page=${page}`
   );
 }
 
