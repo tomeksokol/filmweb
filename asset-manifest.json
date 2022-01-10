@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/filmweb/static/css/main.f60bbfd7.css",
+    "main.js": "/filmweb/static/js/main.4a8aa927.js",
+    "static/css/674.ffdacf89.chunk.css": "/filmweb/static/css/674.ffdacf89.chunk.css",
+    "static/js/674.aacdb3e4.chunk.js": "/filmweb/static/js/674.aacdb3e4.chunk.js",
+    "static/css/600.db03d5f2.chunk.css": "/filmweb/static/css/600.db03d5f2.chunk.css",
+    "static/js/600.a0ec8d0e.chunk.js": "/filmweb/static/js/600.a0ec8d0e.chunk.js",
+    "static/css/363.249eef35.chunk.css": "/filmweb/static/css/363.249eef35.chunk.css",
+    "static/js/363.412b3745.chunk.js": "/filmweb/static/js/363.412b3745.chunk.js",
+    "static/css/76.e3c0180f.chunk.css": "/filmweb/static/css/76.e3c0180f.chunk.css",
+    "static/js/76.7c781366.chunk.js": "/filmweb/static/js/76.7c781366.chunk.js",
+    "static/css/895.1d4e4dc5.chunk.css": "/filmweb/static/css/895.1d4e4dc5.chunk.css",
+    "static/js/895.adadc7b0.chunk.js": "/filmweb/static/js/895.adadc7b0.chunk.js",
+    "static/js/787.2f1d3918.chunk.js": "/filmweb/static/js/787.2f1d3918.chunk.js",
+    "static/js/105.755efe66.chunk.js": "/filmweb/static/js/105.755efe66.chunk.js",
+    "static/js/948.084ba171.chunk.js": "/filmweb/static/js/948.084ba171.chunk.js",
+    "static/media/error.svg.png": "/filmweb/static/media/error.svg.718ab7fc50feafa4ccb8.png",
+    "index.html": "/filmweb/index.html",
+    "main.f60bbfd7.css.map": "/filmweb/static/css/main.f60bbfd7.css.map",
+    "main.4a8aa927.js.map": "/filmweb/static/js/main.4a8aa927.js.map",
+    "674.ffdacf89.chunk.css.map": "/filmweb/static/css/674.ffdacf89.chunk.css.map",
+    "674.aacdb3e4.chunk.js.map": "/filmweb/static/js/674.aacdb3e4.chunk.js.map",
+    "600.db03d5f2.chunk.css.map": "/filmweb/static/css/600.db03d5f2.chunk.css.map",
+    "600.a0ec8d0e.chunk.js.map": "/filmweb/static/js/600.a0ec8d0e.chunk.js.map",
+    "363.249eef35.chunk.css.map": "/filmweb/static/css/363.249eef35.chunk.css.map",
+    "363.412b3745.chunk.js.map": "/filmweb/static/js/363.412b3745.chunk.js.map",
+    "76.e3c0180f.chunk.css.map": "/filmweb/static/css/76.e3c0180f.chunk.css.map",
+    "76.7c781366.chunk.js.map": "/filmweb/static/js/76.7c781366.chunk.js.map",
+    "895.1d4e4dc5.chunk.css.map": "/filmweb/static/css/895.1d4e4dc5.chunk.css.map",
+    "895.adadc7b0.chunk.js.map": "/filmweb/static/js/895.adadc7b0.chunk.js.map",
+    "787.2f1d3918.chunk.js.map": "/filmweb/static/js/787.2f1d3918.chunk.js.map",
+    "105.755efe66.chunk.js.map": "/filmweb/static/js/105.755efe66.chunk.js.map",
+    "948.084ba171.chunk.js.map": "/filmweb/static/js/948.084ba171.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f60bbfd7.css",
+    "static/js/main.4a8aa927.js"
+  ]
+}
