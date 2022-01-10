@@ -3,31 +3,23 @@ import { Route, Routes } from "react-router-dom";
 import React, { lazy, Suspense, useEffect } from "react";
 import LoaderComponent from "./components/LoaderComponent/LoaderComponent";
 import Nav from "./components/Nav/Nav";
-import { addBackToTop } from 'vanilla-back-to-top';
+import { addBackToTop } from "vanilla-back-to-top";
 
-const HomePage = lazy(() =>
-  import("./pages/HomePage/HomePage" /* webpackChunkName: "home-view" */)
-);
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 
-const MoviesPage = lazy(() =>
-  import("./pages/MoviesPage/MoviesPage" /* webpackChunkName: "movies-view" */)
-);
+const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 
 const MovieDetailsPage = lazy(() =>
-  import(
-    "./pages/MovieDetailsPage/MovieDetailsPage" /* webpackChunkName: "movies-details-view" */
-  )
+  import("./pages/MovieDetailsPage/MovieDetailsPage")
 );
 
 const Cast = lazy(() => import("./components/Cast/Cast"));
 const Reviews = lazy(() => import("./components/Reviews/Reviews"));
 
-
 function App() {
-
   useEffect(() => {
     addBackToTop({
-      backgroundColor: '#fa7584',
+      backgroundColor: "#fa7584",
     });
   }, []);
 
